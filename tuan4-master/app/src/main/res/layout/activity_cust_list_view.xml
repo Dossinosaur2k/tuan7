@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustListView"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_contrainer"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:text="Follow me on"
+        android:layout_gravity="center"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/bgBottomNavigation"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/navigation" />
+</FrameLayout>
+</LinearLayout>
